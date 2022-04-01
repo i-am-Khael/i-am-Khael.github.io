@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-grey: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsl(216, 12%, 54%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--neutral-very-dark-blue);
+  color: var(--neutral-white);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.interactiveRating {
+  width: 40%;
+  padding: 2.5rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  background-color: var(--neutral-dark-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+section.interactiveRating div.starIcon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px var(--neutral-very-dark-blue);
+  background-color: var(--neutral-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.interactiveRating p {
+  color: var(--neutral-light-grey);
+  font-size: 15px;
+}
+
+section.interactiveRating div.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+section.interactiveRating button.btn {
+  width: 35px;
+  height: 35px;
+  padding: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--neutral-medium-grey);
+  outline: none;
+  box-shadow: none;
+  border: none;
+  box-shadow: 0 0 2px var(--neutral-very-dark-blue);
+  background-color: var(--neutral-dark-blue);
+}
+
+section.interactiveRating button.btnSubmit {
+  padding: .5rem 0;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+
+section.interactiveRating .btn:hover {
+  color: var(--neutral-white);
+  cursor: pointer;
+  background-color: var(--primary-orange);
+}
+
+section.interactiveRating .btnSubmit{
+  color: var(--neutral-white);
+  cursor: pointer;
+  background-color: var(--primary-orange);
+}
+
+section.interactiveRating .btnSubmit:hover {
+  color: var(--primary-orange);
+  background-color: var(--neutral-white);
+}
+
+
+/* 2nd Section */
+
+div.container {
+  display: none;
+}
+
+section.thankYou {
+  width: 40%;
+  padding: 2.5rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  background-color: var(--neutral-dark-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+  align-items: center;
+}
+
+section.thankYou div.imgContainer {
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+section.thankYou h5.rating {
+  padding: .6rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  color: var(--primary-orange);
+  box-shadow: 0 0 2px var(--neutral-very-dark-blue);
+}
+
+section.thankYou p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -1rem;
+  color: var(--neutral-light-grey);
+  font-size: 15px;
+}
+
+
+@media all and (max-width: 720px) {
+
+  section.interactiveRating, section.thankYou {
+    width: 55%;
+  }
+
+  section.thankYou p {
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 600px) {
+
+  section.interactiveRating, section.thankYou {
+    width: 90%;
+  }
+
+}
