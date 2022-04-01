@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  color: hsl(193, 38%, 86%);
+  font-weight: 800;
+}
+
+main {
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.adviceGenerator {
+  width: 100%;
+  background-color: hsl(217, 19%, 24%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+div.adviceGenerator label {
+  color: hsl(150, 100%, 66%);
+}
+
+p.advice {
+  font-size: 28px;
+  text-align: center;
+}
+
+div.pattern {
+  margin-bottom: 2rem;
+}
+
+img.mobilePattern {
+  display: none;
+}
+
+div.diceIcon {
+  width: 50px;
+  height: 50px;
+  padding: .3rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+
+div.diceIcon:hover {
+  box-shadow: 0 0 10px .5px hsl(150, 100%, 66%), 0 0 20px .5px hsl(150, 100%, 66%) ;
+}
+
+img.dice:hover {
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+@media all and (max-width: 720px) {
+
+  main {
+    width: 90%;
+  }
+
+  img.desktopPattern {
+    display: none;
+  }
+
+  img.mobilePattern {
+    display: block;
+  }
+
+}
+
+
