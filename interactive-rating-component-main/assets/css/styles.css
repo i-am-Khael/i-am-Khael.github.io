@@ -86,6 +86,11 @@ section.interactiveRating button.btn {
   background-color: var(--neutral-dark-blue);
 }
 
+section.interactiveRating button.btn.active {
+  color: var(--neutral-white);
+  background-color: var(--neutral-medium-grey);
+}
+
 section.interactiveRating button.btnSubmit {
   padding: .5rem 0;
   outline: none;
