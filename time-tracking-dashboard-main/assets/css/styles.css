@@ -36,11 +36,11 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 6rem 0;
 }
 
 section.time-tracking-grid-layout {
@@ -164,6 +164,15 @@ div.self-care-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+div.work-title label,
+div.play-title label,
+div.study-title label,
+div.exercise-title label,
+div.social-title label,
+div.self-care-title label {
+  font-size: 1rem;
 }
 
 div.work-title span,

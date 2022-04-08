@@ -1,12 +1,12 @@
 
 // wtf, right? hahah
 const btns = document.querySelectorAll('.btn');
-const workTitle = document.querySelector('div.work-title h6');
-const playTitle = document.querySelector('div.play-title h6');
-const studyTitle = document.querySelector('div.study-title h6');
-const exerciseTitle = document.querySelector('div.exercise-title h6');
-const socialTitle = document.querySelector('div.social-title h6');
-const selfCareTitle = document.querySelector('div.self-care-title h6');
+const workTitle = document.querySelector('div.work-title label');
+const playTitle = document.querySelector('div.play-title label');
+const studyTitle = document.querySelector('div.study-title label');
+const exerciseTitle = document.querySelector('div.exercise-title label');
+const socialTitle = document.querySelector('div.social-title label');
+const selfCareTitle = document.querySelector('div.self-care-title label');
 
 const workTimeH2 = document.querySelector('div.work-time h2');
 const playTimeH2 = document.querySelector('div.play-time h2');

@@ -39,8 +39,10 @@ div.adviceGenerator {
   gap: 2rem;
 }
 
-div.adviceGenerator label {
+div.adviceGenerator h1 {
   color: hsl(150, 100%, 66%);
+  letter-spacing: .3rem;
+  font-size: 1rem;
 }
 
 p.advice {
