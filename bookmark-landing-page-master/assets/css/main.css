@@ -532,29 +532,29 @@ section.download-extension-container div.browsers-container div.opera-container 
   background-color: transparent;
 }
 
-section.frequently-asked-question {
+div.frequently-asked-question {
   width: 80%;
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 15rem;
 }
-section.frequently-asked-question div.faq-intro {
+div.frequently-asked-question div.faq-intro {
   width: 60%;
   margin: 0 auto;
   text-align: center;
 }
-section.frequently-asked-question div.faq-intro h6 {
+div.frequently-asked-question div.faq-intro label {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: hsl(229deg, 31%, 21%);
   font-weight: 500;
 }
-section.frequently-asked-question div.faq-intro p {
+div.frequently-asked-question div.faq-intro p {
   line-height: 2rem;
   color: hsl(229deg, 8%, 60%);
 }
-section.frequently-asked-question div.faq-answers {
+div.frequently-asked-question div.faq-answers {
   width: 60%;
   height: 100%;
   display: grid;
@@ -565,10 +565,10 @@ section.frequently-asked-question div.faq-answers {
   color: hsl(229deg, 31%, 21%);
   gap: 2rem;
 }
-section.frequently-asked-question div.faq-answers div.question-one,
-section.frequently-asked-question div.faq-answers div.question-two,
-section.frequently-asked-question div.faq-answers div.question-three,
-section.frequently-asked-question div.faq-answers div.question-four {
+div.frequently-asked-question div.faq-answers div.question-one,
+div.frequently-asked-question div.faq-answers div.question-two,
+div.frequently-asked-question div.faq-answers div.question-three,
+div.frequently-asked-question div.faq-answers div.question-four {
   width: 100%;
   display: flex;
   align-items: center;
@@ -577,45 +577,45 @@ section.frequently-asked-question div.faq-answers div.question-four {
   border-bottom: 0.5px solid #dcc8c8;
   cursor: pointer;
 }
-section.frequently-asked-question div.faq-answers div.question-one:hover,
-section.frequently-asked-question div.faq-answers div.question-two:hover,
-section.frequently-asked-question div.faq-answers div.question-three:hover,
-section.frequently-asked-question div.faq-answers div.question-four:hover {
+div.frequently-asked-question div.faq-answers div.question-one:hover,
+div.frequently-asked-question div.faq-answers div.question-two:hover,
+div.frequently-asked-question div.faq-answers div.question-three:hover,
+div.frequently-asked-question div.faq-answers div.question-four:hover {
   color: hsl(0deg, 94%, 66%);
 }
-section.frequently-asked-question div.faq-answers div.question-one i,
-section.frequently-asked-question div.faq-answers div.question-two i,
-section.frequently-asked-question div.faq-answers div.question-three i,
-section.frequently-asked-question div.faq-answers div.question-four i {
+div.frequently-asked-question div.faq-answers div.question-one i,
+div.frequently-asked-question div.faq-answers div.question-two i,
+div.frequently-asked-question div.faq-answers div.question-three i,
+div.frequently-asked-question div.faq-answers div.question-four i {
   color: hsl(231deg, 69%, 60%);
   cursor: pointer;
 }
-section.frequently-asked-question div.faq-answers div.question-one i.active,
-section.frequently-asked-question div.faq-answers div.question-two i.active,
-section.frequently-asked-question div.faq-answers div.question-three i.active,
-section.frequently-asked-question div.faq-answers div.question-four i.active {
+div.frequently-asked-question div.faq-answers div.question-one i.active,
+div.frequently-asked-question div.faq-answers div.question-two i.active,
+div.frequently-asked-question div.faq-answers div.question-three i.active,
+div.frequently-asked-question div.faq-answers div.question-four i.active {
   color: hsl(0deg, 94%, 66%);
 }
-section.frequently-asked-question div.faq-answers div.answer-one,
-section.frequently-asked-question div.faq-answers div.answer-two,
-section.frequently-asked-question div.faq-answers div.answer-three,
-section.frequently-asked-question div.faq-answers div.answer-four {
+div.frequently-asked-question div.faq-answers div.answer-one,
+div.frequently-asked-question div.faq-answers div.answer-two,
+div.frequently-asked-question div.faq-answers div.answer-three,
+div.frequently-asked-question div.faq-answers div.answer-four {
   display: none;
 }
-section.frequently-asked-question div.faq-answers div.answer-one.active,
-section.frequently-asked-question div.faq-answers div.answer-two.active,
-section.frequently-asked-question div.faq-answers div.answer-three.active,
-section.frequently-asked-question div.faq-answers div.answer-four.active {
+div.frequently-asked-question div.faq-answers div.answer-one.active,
+div.frequently-asked-question div.faq-answers div.answer-two.active,
+div.frequently-asked-question div.faq-answers div.answer-three.active,
+div.frequently-asked-question div.faq-answers div.answer-four.active {
   display: block;
 }
-section.frequently-asked-question div.faq-answers div.answer-one p,
-section.frequently-asked-question div.faq-answers div.answer-two p,
-section.frequently-asked-question div.faq-answers div.answer-three p,
-section.frequently-asked-question div.faq-answers div.answer-four p {
+div.frequently-asked-question div.faq-answers div.answer-one p,
+div.frequently-asked-question div.faq-answers div.answer-two p,
+div.frequently-asked-question div.faq-answers div.answer-three p,
+div.frequently-asked-question div.faq-answers div.answer-four p {
   line-height: 2rem;
   color: hsl(229deg, 8%, 60%);
 }
-section.frequently-asked-question div.faq-answers a {
+div.frequently-asked-question div.faq-answers a {
   width: 125px;
   margin: 0 auto;
   padding: 0.6rem 1.1rem;
@@ -629,7 +629,7 @@ section.frequently-asked-question div.faq-answers a {
   border-radius: 0.5rem;
   font-weight: 600;
 }
-section.frequently-asked-question div.faq-answers a:hover {
+div.frequently-asked-question div.faq-answers a:hover {
   color: hsl(231deg, 69%, 60%);
   background-color: transparent;
 }
@@ -865,16 +865,16 @@ section.features-container div.tabs-content-container div.easy-sharing-content d
     grid-template-columns: 1fr;
   }
 
-  section.frequently-asked-question {
+  div.frequently-asked-question {
     width: 90%;
   }
-  section.frequently-asked-question div.faq-intro {
+  div.frequently-asked-question div.faq-intro {
     width: 100%;
   }
-  section.frequently-asked-question div.faq-intro h6 {
+  div.frequently-asked-question div.faq-intro label {
     font-size: 1.5rem;
   }
-  section.frequently-asked-question div.faq-answers {
+  div.frequently-asked-question div.faq-answers {
     width: 100%;
   }
 

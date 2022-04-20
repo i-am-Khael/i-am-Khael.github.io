@@ -490,7 +490,7 @@ section.download-extension-container {
 
 } // END OF SECTION DOWNLOAD CONTAINER
 
-section.frequently-asked-question {
+div.frequently-asked-question {
   @include container;
   margin-top: 15rem;
 
@@ -498,7 +498,7 @@ section.frequently-asked-question {
     width: 60%; margin: 0 auto;
     text-align: center;
 
-    h6 {
+    label {
       font-size: 2rem;
       margin-bottom: 1.5rem;
       color: $neutral-very-dark-blue;
@@ -818,13 +818,13 @@ footer {
 
   }  // END OF DL EXTENSION CONTAINER
 
-  section.frequently-asked-question {
+  div.frequently-asked-question {
     width: 90%;
 
     div.faq-intro {
       width: 100%;
 
-      h6 {
+      label {
         font-size: 1.5rem;
       }
 
