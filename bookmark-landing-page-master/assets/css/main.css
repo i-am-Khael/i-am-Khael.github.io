@@ -1,0 +1,906 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  color: hsl(229deg, 31%, 21%);
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  position: relative;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-size: 1.3rem;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+nav.nav-desktop {
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 0 25px 0.5px #000;
+  background-color: #fff;
+  position: fixed;
+  z-index: 5;
+}
+nav.nav-desktop div.nav-content {
+  width: 80%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav.nav-desktop div.nav-content div.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+}
+nav.nav-desktop div.nav-content div.nav-links a {
+  color: hsl(229deg, 31%, 21%);
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+nav.nav-desktop div.nav-content div.nav-links a:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+nav.nav-desktop div.nav-content div.nav-links a.login-btn {
+  color: #f5f5f5;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border: 1px solid hsl(0deg, 94%, 66%);
+  border-radius: 0.3rem;
+  background-color: hsl(0deg, 94%, 66%);
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+nav.nav-desktop div.nav-content div.nav-links a.login-btn:hover {
+  background-color: transparent;
+  color: hsl(0deg, 94%, 66%);
+}
+nav.nav-desktop div.nav-content div.menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+nav.nav-desktop div.nav-content div.menu:hover {
+  color: hsl(231deg, 69%, 60%);
+}
+
+nav.nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(229deg, 31%, 21%);
+  color: #f5f5f5;
+  z-index: 5;
+  padding: 2rem;
+  display: none;
+}
+nav.nav-mobile div.logo-container {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.1);
+}
+nav.nav-mobile div.logo-container div.close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+nav.nav-mobile div.logo-container div.close:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+nav.nav-mobile div.nav-mobile-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+nav.nav-mobile div.nav-mobile-links a {
+  width: 100%;
+  color: #f5f5f5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  padding: 1.1rem 0;
+  text-align: center;
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.1);
+}
+nav.nav-mobile div.nav-mobile-links a:hover {
+  color: hsl(231deg, 69%, 60%);
+}
+nav.nav-mobile div.nav-mobile-links a.login-btn {
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  border: 2px solid #f5f5f5;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+nav.nav-mobile div.nav-mobile-links a.login-btn:hover {
+  color: hsl(231deg, 69%, 60%);
+  border: 2px solid hsl(231deg, 69%, 60%);
+}
+nav.nav-mobile div.nav-mobile-links div.social-media-icons {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+nav.nav-mobile div.nav-mobile-links div.social-media-icons a:hover {
+  color: hsl(231deg, 69%, 60%);
+}
+nav.nav-mobile div.nav-mobile-links div.social-media-icons a i {
+  font-size: 2rem;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+header div.header-content {
+  width: 80%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+header div.header-content div.simple-bookmark {
+  width: 100%;
+}
+header div.header-content div.simple-bookmark h1 {
+  margin-bottom: 1rem;
+  color: hsl(229deg, 31%, 21%);
+  font-weight: 500;
+}
+header div.header-content div.simple-bookmark p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  color: hsl(229deg, 8%, 60%);
+}
+header div.header-content div.simple-bookmark div.btns {
+  width: 100%;
+  margin-top: 2rem;
+}
+header div.header-content div.simple-bookmark div.btns a.btn-chrome {
+  margin-right: 1.3rem;
+  border: 1px solid hsl(231deg, 69%, 60%);
+  background-color: hsl(231deg, 69%, 60%);
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+}
+header div.header-content div.simple-bookmark div.btns a.btn-chrome:hover {
+  background-color: #f5f5f5;
+  color: hsl(231deg, 69%, 60%);
+}
+header div.header-content div.simple-bookmark div.btns a.btn-firefox {
+  background-color: #fff;
+  border: 1px solid hsl(229deg, 8%, 60%);
+  color: hsl(229deg, 8%, 60%);
+  text-decoration: none;
+  font-weight: 500;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+}
+header div.header-content div.simple-bookmark div.btns a.btn-firefox:hover {
+  color: hsl(229deg, 31%, 21%);
+  border: 1px solid hsl(229deg, 31%, 21%);
+}
+header div.header-content div.feature-hero-img {
+  width: 100%;
+  position: relative;
+}
+header div.header-content div.feature-hero-img img {
+  width: 100%;
+  height: 100%;
+}
+
+div.feature-hero-img::before {
+  content: "";
+  width: 350px;
+  height: 175px;
+  background-color: hsl(231deg, 69%, 60%);
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+section.features-container {
+  width: 80%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+section.features-container div.feature-intro {
+  width: 50%;
+  margin: 5rem auto;
+  text-align: center;
+}
+section.features-container div.feature-intro h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: hsl(229deg, 31%, 21%);
+}
+section.features-container div.feature-intro p {
+  color: hsl(229deg, 8%, 60%);
+  line-height: 1.7rem;
+}
+section.features-container div.tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+section.features-container div.tabs button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+section.features-container div.tabs button:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+section.features-container div.tabs button.active {
+  border-bottom: 2px solid hsl(0deg, 94%, 66%);
+}
+section.features-container div.tabs-content-container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+section.features-container div.tabs-content-container div.tab-simple-container,
+section.features-container div.tabs-content-container div.tab-speady-container,
+section.features-container div.tabs-content-container div.tab-easy-container {
+  display: none;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content,
+section.features-container div.tabs-content-container div.speady-searching-content,
+section.features-container div.tabs-content-container div.easy-sharing-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-img-container,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-img-container,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-img-container,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-img-container,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-img-container,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-img-container,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-img-container,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-img-container,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-img-container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-img-container img,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-img-container img,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-img-container img,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-img-container img,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-img-container img,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-img-container img,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-img-container img,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-img-container img,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content h3, section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content h4, section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content h5,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content h3,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content h4,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content h5,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content h3,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content h4,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content h5,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content h3,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content h4,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content h5,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content h3,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content h4,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content h5,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content h3,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content h4,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content h5,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content h3,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content h4,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content h5,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content h3,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content h4,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content h5,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content h3,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content h4,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content h5 {
+  color: hsl(229deg, 31%, 21%);
+  font-size: 2rem;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content p,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content p,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content p,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content p,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content p,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content p,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content p,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content p,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content p {
+  color: hsl(229deg, 8%, 60%);
+  line-height: 1.8rem;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content div.btn,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content div.btn,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content div.btn,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content div.btn,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content div.btn,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content div.btn,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content div.btn,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content div.btn,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content div.btn {
+  margin-top: 1rem;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content div.btn a,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content div.btn a,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content div.btn a,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content div.btn a,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content div.btn a,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content div.btn a,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content div.btn a,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content div.btn a,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content div.btn a {
+  width: 150px;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid hsl(231deg, 69%, 60%);
+  background-color: hsl(231deg, 69%, 60%);
+  color: #f5f5f5;
+  outline: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content div.btn a:hover,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content div.btn a:hover,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content div.btn a:hover,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content div.btn a:hover,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content div.btn a:hover,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content div.btn a:hover,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content div.btn a:hover,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content div.btn a:hover,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content div.btn a:hover {
+  color: hsl(231deg, 69%, 60%);
+  background-color: transparent;
+}
+
+div.simple-img-container::before,
+div.speady-img-container::before,
+div.easy-img-container::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -90px;
+  width: 500px;
+  height: 300px;
+  border-radius: 0 50% 50% 0;
+  background-color: hsl(231deg, 69%, 60%);
+  z-index: -1;
+}
+
+section.download-extension-container {
+  width: 80%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+section.download-extension-container div.dl-extension-intro {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 7rem auto;
+  text-align: center;
+}
+section.download-extension-container div.dl-extension-intro h6 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: hsl(229deg, 31%, 21%);
+}
+section.download-extension-container div.dl-extension-intro p {
+  color: hsl(229deg, 8%, 60%);
+  line-height: 2rem;
+}
+section.download-extension-container div.browsers-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+section.download-extension-container div.browsers-container div.firefox-container {
+  transform: translateY(50px);
+}
+section.download-extension-container div.browsers-container div.opera-container {
+  transform: translateY(100px);
+}
+section.download-extension-container div.browsers-container div.chrome-container,
+section.download-extension-container div.browsers-container div.firefox-container,
+section.download-extension-container div.browsers-container div.opera-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+section.download-extension-container div.browsers-container div.chrome-container label,
+section.download-extension-container div.browsers-container div.firefox-container label,
+section.download-extension-container div.browsers-container div.opera-container label {
+  color: hsl(229deg, 31%, 21%);
+  font-weight: 500;
+}
+section.download-extension-container div.browsers-container div.chrome-container p,
+section.download-extension-container div.browsers-container div.firefox-container p,
+section.download-extension-container div.browsers-container div.opera-container p {
+  font-size: 1rem;
+  color: hsl(229deg, 8%, 60%);
+}
+section.download-extension-container div.browsers-container div.chrome-container a,
+section.download-extension-container div.browsers-container div.firefox-container a,
+section.download-extension-container div.browsers-container div.opera-container a {
+  padding: 0.7rem 1.5rem;
+  outline: none;
+  border: 1px solid hsl(231deg, 69%, 60%);
+  background-color: hsl(231deg, 69%, 60%);
+  color: #f5f5f5;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+section.download-extension-container div.browsers-container div.chrome-container a:hover,
+section.download-extension-container div.browsers-container div.firefox-container a:hover,
+section.download-extension-container div.browsers-container div.opera-container a:hover {
+  color: hsl(231deg, 69%, 60%);
+  background-color: transparent;
+}
+
+section.frequently-asked-question {
+  width: 80%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 15rem;
+}
+section.frequently-asked-question div.faq-intro {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+section.frequently-asked-question div.faq-intro h6 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: hsl(229deg, 31%, 21%);
+  font-weight: 500;
+}
+section.frequently-asked-question div.faq-intro p {
+  line-height: 2rem;
+  color: hsl(229deg, 8%, 60%);
+}
+section.frequently-asked-question div.faq-answers {
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+  color: hsl(229deg, 31%, 21%);
+  gap: 2rem;
+}
+section.frequently-asked-question div.faq-answers div.question-one,
+section.frequently-asked-question div.faq-answers div.question-two,
+section.frequently-asked-question div.faq-answers div.question-three,
+section.frequently-asked-question div.faq-answers div.question-four {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid #dcc8c8;
+  cursor: pointer;
+}
+section.frequently-asked-question div.faq-answers div.question-one:hover,
+section.frequently-asked-question div.faq-answers div.question-two:hover,
+section.frequently-asked-question div.faq-answers div.question-three:hover,
+section.frequently-asked-question div.faq-answers div.question-four:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+section.frequently-asked-question div.faq-answers div.question-one i,
+section.frequently-asked-question div.faq-answers div.question-two i,
+section.frequently-asked-question div.faq-answers div.question-three i,
+section.frequently-asked-question div.faq-answers div.question-four i {
+  color: hsl(231deg, 69%, 60%);
+  cursor: pointer;
+}
+section.frequently-asked-question div.faq-answers div.question-one i.active,
+section.frequently-asked-question div.faq-answers div.question-two i.active,
+section.frequently-asked-question div.faq-answers div.question-three i.active,
+section.frequently-asked-question div.faq-answers div.question-four i.active {
+  color: hsl(0deg, 94%, 66%);
+}
+section.frequently-asked-question div.faq-answers div.answer-one,
+section.frequently-asked-question div.faq-answers div.answer-two,
+section.frequently-asked-question div.faq-answers div.answer-three,
+section.frequently-asked-question div.faq-answers div.answer-four {
+  display: none;
+}
+section.frequently-asked-question div.faq-answers div.answer-one.active,
+section.frequently-asked-question div.faq-answers div.answer-two.active,
+section.frequently-asked-question div.faq-answers div.answer-three.active,
+section.frequently-asked-question div.faq-answers div.answer-four.active {
+  display: block;
+}
+section.frequently-asked-question div.faq-answers div.answer-one p,
+section.frequently-asked-question div.faq-answers div.answer-two p,
+section.frequently-asked-question div.faq-answers div.answer-three p,
+section.frequently-asked-question div.faq-answers div.answer-four p {
+  line-height: 2rem;
+  color: hsl(229deg, 8%, 60%);
+}
+section.frequently-asked-question div.faq-answers a {
+  width: 125px;
+  margin: 0 auto;
+  padding: 0.6rem 1.1rem;
+  outline: none;
+  border: 1px solid hsl(231deg, 69%, 60%);
+  background-color: hsl(231deg, 69%, 60%);
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+section.frequently-asked-question div.faq-answers a:hover {
+  color: hsl(231deg, 69%, 60%);
+  background-color: transparent;
+}
+
+section.contact-us {
+  width: 100%;
+  height: 100%;
+  margin-top: 10rem;
+  padding: 7rem 0;
+  background-color: hsl(231deg, 69%, 60%);
+  margin-bottom: 0;
+}
+section.contact-us div.container {
+  width: 80%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.3rem;
+  color: #f5f5f5;
+}
+section.contact-us div.container p {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+section.contact-us div.container h6 {
+  font-size: 2rem;
+}
+section.contact-us div.container div.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+section.contact-us div.container div.form div.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(0deg, 94%, 66%);
+  border-radius: 0.5rem;
+}
+section.contact-us div.container div.form div.email-container input#email {
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+section.contact-us div.container div.form div.email-container input#email.error {
+  border-radius: 1px solid hsl(0deg, 94%, 66%);
+}
+section.contact-us div.container div.form div.email-container small {
+  padding: 0.2rem 0.1rem;
+  display: none;
+}
+section.contact-us div.container div.form div.email-container small.error {
+  display: block;
+}
+section.contact-us div.container div.form button {
+  color: #f5f5f5;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(0deg, 94%, 66%);
+  background-color: hsl(0deg, 94%, 66%);
+  font-weight: 600;
+  cursor: pointer;
+}
+section.contact-us div.container div.form button:hover {
+  color: hsl(0deg, 94%, 66%);
+  background-color: #f5f5f5;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(229deg, 31%, 21%);
+  padding: 2rem 0;
+}
+footer div.footer-nav {
+  width: 80%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div.footer-nav div.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+footer div.footer-nav div.logo-container a {
+  text-decoration: none;
+  color: #f5f5f5;
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
+footer div.footer-nav div.logo-container a:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+footer div.footer-nav div.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+footer div.footer-nav div.social-icons i {
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+footer div.footer-nav div.social-icons i:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+
+@media all and (max-width: 720px) {
+  body {
+    font-size: 1rem;
+  }
+
+  nav.nav-desktop div.nav-content {
+    width: 90%;
+  }
+  nav.nav-desktop div.nav-content div.nav-links {
+    display: none;
+  }
+  nav.nav-desktop div.nav-content div.menu {
+    display: block;
+  }
+
+  header div.header-content {
+    width: 90%;
+    padding-top: 7rem;
+    grid-template-columns: 1fr;
+  }
+  header div.header-content div.simple-bookmark {
+    grid-row: 2;
+  }
+  header div.header-content div.simple-bookmark h1 {
+    text-align: center;
+  }
+
+  section.features-container {
+    width: 90%;
+  }
+  section.features-container div.feature-intro {
+    width: 90%;
+  }
+  section.features-container div.feature-intro h2 {
+    font-size: 1.5rem;
+  }
+  section.features-container div.tabs {
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  section.features-container div.tabs button.btn-tabs {
+    width: 50%;
+    padding-bottom: 1rem;
+  }
+  section.features-container div.tabs-content-container div.simple-bookmarking-content,
+section.features-container div.tabs-content-container div.speady-searching-content,
+section.features-container div.tabs-content-container div.easy-sharing-content {
+    grid-template-columns: 1fr;
+  }
+  section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content {
+    align-items: center;
+    gap: 1rem;
+  }
+  section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content h3, section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content h4, section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content h5,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content h3,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content h4,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content h5,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content h3,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content h4,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content h5,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content h3,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content h4,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content h5,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content h3,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content h4,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content h5,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content h3,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content h4,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content h5,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content h3,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content h4,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content h5,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content h3,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content h4,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content h5,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content h3,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content h4,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content h5 {
+    font-size: 1.5rem;
+    margin-top: 2.3rem;
+  }
+  section.features-container div.tabs-content-container div.simple-bookmarking-content div.simple-msg-content p,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.speady-msg-content p,
+section.features-container div.tabs-content-container div.simple-bookmarking-content div.easy-msg-content p,
+section.features-container div.tabs-content-container div.speady-searching-content div.simple-msg-content p,
+section.features-container div.tabs-content-container div.speady-searching-content div.speady-msg-content p,
+section.features-container div.tabs-content-container div.speady-searching-content div.easy-msg-content p,
+section.features-container div.tabs-content-container div.easy-sharing-content div.simple-msg-content p,
+section.features-container div.tabs-content-container div.easy-sharing-content div.speady-msg-content p,
+section.features-container div.tabs-content-container div.easy-sharing-content div.easy-msg-content p {
+    width: 80%;
+    text-align: center;
+  }
+
+  section.download-extension-container {
+    width: 90%;
+  }
+  section.download-extension-container div.dl-extension-intro {
+    width: 90%;
+  }
+  section.download-extension-container div.dl-extension-intro h6 {
+    font-size: 1.5rem;
+  }
+  section.download-extension-container div.browsers-container {
+    grid-template-columns: 1fr;
+  }
+
+  section.frequently-asked-question {
+    width: 90%;
+  }
+  section.frequently-asked-question div.faq-intro {
+    width: 100%;
+  }
+  section.frequently-asked-question div.faq-intro h6 {
+    font-size: 1.5rem;
+  }
+  section.frequently-asked-question div.faq-answers {
+    width: 100%;
+  }
+
+  section.contact-us div.container {
+    width: 90%;
+  }
+  section.contact-us div.container h6 {
+    font-size: 1.5rem;
+  }
+  section.contact-us div.container div.form {
+    flex-direction: column;
+  }
+  section.contact-us div.container div.form button {
+    width: 60%;
+  }
+
+  footer div.footer-nav {
+    flex-direction: column;
+  }
+  footer div.footer-nav div.logo-container {
+    flex-direction: column;
+  }
+  footer div.footer-nav div.logo-container a {
+    margin-left: 0;
+  }
+  footer div.footer-nav div.social-icons {
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
