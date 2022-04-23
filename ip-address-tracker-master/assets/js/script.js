@@ -3,7 +3,8 @@ const searchInput = document.querySelector('.search-input');
 const searchBtn = document.querySelector('.search-btn');
 const label = document.querySelectorAll('p');
 
-let map, lat, lng;
+let lat = 0, lng = 0;
+let map = L.map('map-result');
 
 const ipAddress = async () => {
   
@@ -25,7 +26,7 @@ const ipAddress = async () => {
       })
       .catch(error => console.log(`An error occured: ${error}`));
       
-  map = await L.map('map-result').setView([lat, lng], 10);
+  map.setView([lat, lng], 10);
     
   L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=OiS2W2371uYq1Bo2M6i5', {
     
