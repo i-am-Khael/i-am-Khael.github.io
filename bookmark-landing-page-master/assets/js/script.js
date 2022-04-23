@@ -121,7 +121,7 @@ const emailInput = document.querySelector('input#email');
 const btnEmail = document.querySelector('button#btnEmail');
 const smallError = document.querySelector('div.email-container small');
 
-const checkEml = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const checkEml = /^([a-zA-Z\d]{3,20})(\@)(gmail|protonmail|yahoo)(\.com)$/g; //it only accepts gmail, protonmail and yahoo as an email provider
 
 const checkEmail = () => {
   
