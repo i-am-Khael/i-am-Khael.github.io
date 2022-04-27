@@ -10,7 +10,7 @@ const ipAddress = async () => {
   
   const value = searchInput.value;
   
-  const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_TD8ibL4egCSZYhSZ6kFWuBdYFHWmG&ipAddress=${value}&domain=${value}`;
+  const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_CbXDiln5HY9HfPety3nEspgz3JINZ&ipAddress=${value}&domain=${value}`;
   
   await fetch(url)
       .then(response => response.json())
