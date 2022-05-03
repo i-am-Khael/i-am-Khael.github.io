@@ -1,0 +1,42 @@
+
+
+footer {
+  width: 100%; height: 100%;
+  margin-top: 8rem; padding: 3rem 0;
+  background-color: var(--primary-dark-blue);
+
+
+  div.footer-nav {
+    @include container;
+    display: flex;
+    align-items: center; justify-content: space-between;
+
+    div.logo-n-icons {
+      display: flex; flex-direction: column;
+      justify-content: space-between; gap: 5rem;
+
+      div.icon-nav-links a {
+        margin: .5rem;
+      }
+
+    }
+
+    div.footer-nav-links-a, div.footer-nav-links-b {
+      display: flex; flex-direction: column; gap: 2rem;
+      color: var(--white);
+
+      a:hover {
+        color: var(--lime-green);
+      }
+    }
+
+    div.request-invite {
+      button, p {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+
+}

@@ -1,0 +1,19 @@
+
+@mixin container {
+  width: 80%; margin: 0 auto;
+  max-width: 1400px;
+}
+
+@mixin shadow {
+  box-shadow: 0 0 10px 1px var(--dark-color);
+}
+
+@mixin gradient {
+  background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+}
+
+@mixin hoverGradient {
+  background: linear-gradient(to right, var(--hover-lime-green), var(--hover-bright-cyan));
+}
+
+

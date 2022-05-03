@@ -1,0 +1,37 @@
+
+div.articles {
+  width: 100%; height: 100%;
+
+  h2 {
+    color: var(--dark-color); font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  div.articles-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    align-items: center; justify-content: center; gap: 1rem;
+
+    div.claire, div.wilson {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+
+      img {
+        width: 100%; height: 100%;
+        object-fit: cover; margin-bottom: 1.5rem;
+      }
+
+      small {
+        color: var(--neutral-grayish-blue);
+        margin-bottom: 1rem;
+      }
+
+      label {
+        color: var(--dark-color); margin-bottom: 1rem;
+
+        &:hover {
+          color: var(--bright-cyan);
+        }
+      }
+    }
+  }
+}

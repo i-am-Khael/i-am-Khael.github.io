@@ -1,0 +1,128 @@
+
+
+@media all and (max-width: 720px) {
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  nav {
+
+    div.nav-container {
+      width: 90%;
+    }
+
+    div.nav-links {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+
+    i.fa-bars {
+      display: block;
+    }
+
+  }
+
+  header {
+    width: 90%;
+
+    div.header-intro {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+
+      div.header-intro-paragraph {
+        grid-row: 2 / 3 ;
+        align-items: center; justify-content: start;
+
+        h1 {
+          margin-top: 1rem;
+          font-size: 2rem;
+        }
+      }
+
+    }
+
+  } //end of header
+
+  main {
+    width: 90%;
+
+    div.why-choose-easybank {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+
+      div.section-one {
+        width: 100%; text-align: center;
+    
+        label {
+          font-size: 2rem;
+        }
+    
+      }
+
+      div.section-two {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 3rem;
+
+        div.online-banking,
+        div.simple-budgeting,
+        div.fast-boarding,
+        div.open-api {
+          text-align: center;
+          align-items: center; justify-content: center;
+        }
+
+      }
+
+    } // end of why choose easybank
+
+    div.articles {
+      
+      div.articles-grid {
+        grid-template-columns: 1fr; grid-template-rows: repeat(4, 1fr);
+
+        div.claire, div.wilson {
+          p {
+            margin-bottom: 5rem;
+          }
+        }
+        
+      }
+
+    }
+
+  } // end of main
+
+
+  footer {
+
+    div.footer-nav {
+      width: 90%; align-items: center; justify-content: center;
+      flex-direction: column;
+
+      div.logo-n-icons { align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
+  
+      div.footer-nav-links-a, div.footer-nav-links-b {
+        align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;
+      }
+  
+      div.request-invite {
+        margin-top: 2rem; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: 1rem;
+      }
+      
+    }
+
+  }
+
+
+} // end of media
+
